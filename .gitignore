@@ -1,0 +1,5 @@
+node_modules/
+.idea/
+fonts/
+.DS_Store
+index.css

@@ -1,0 +1,37 @@
+{
+  "name": "@traum-ferienwohnungen/nuxt-fontfare",
+  "version": "1.0.0",
+  "description": "The nuxt version of fontfare",
+  "main": "module.js",
+  "scripts": {
+    "update": "node scripts/index.js",
+    "prepublishOnly": "npm run update",
+    "postpublish": "rm -rf fonts",
+    "preversion": "npm run update",
+    "version": "git add -f -A fonts",
+    "postversion": "git push && git push --tags && rm -rf fonts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/traum-ferienwohnungen/nuxt-fontfare.git"
+  },
+  "keywords": [
+    "font",
+    "iconfont",
+    "icons",
+    "tfw",
+    "nuxt",
+    "nuxtjs",
+    "module"
+  ],
+  "author": "Johannes Konze <konze@traum-ferienwohnungen.de>",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/traum-ferienwohnungen/nuxt-fontfare/issues"
+  },
+  "homepage": "https://github.com/traum-ferienwohnungen/nuxt-fontfare#readme",
+  "devDependencies": {
+    "adm-zip": "^0.4.13",
+    "axios": "^0.19.0"
+  }
+}
